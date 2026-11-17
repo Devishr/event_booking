@@ -1,0 +1,9 @@
+@RestController
+class VenueController {
+
+    @GetMapping("/api/key")
+    public String getApiKey(@RequestParam String venueId) {
+        // Logic to retrieve API key based on venueId
+        return "API_KEY_FOR_VENUE_" + venueId;
+    }
+}
